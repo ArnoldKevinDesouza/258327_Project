@@ -5,6 +5,7 @@ import sys
 import os
 import pytest
 
+#pytest
 def test_sum():
      assert sum(4,5)==9
 def test_sub():
@@ -179,7 +180,7 @@ def multi(x, y):
 
 def division(x,y):
      return x / y 
-     
+
 def calculator():
      
      print("<--------- Basic Calculator --------->\n")
