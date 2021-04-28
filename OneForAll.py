@@ -3,6 +3,17 @@ import random
 import time
 import sys
 import os
+import pytest
+
+def test_sum():
+     assert sum(4,5)==9
+def test_sub():
+     assert sub(4,5)==-1
+def test_multi():
+     assert multi(4,5)==20
+def test_division():
+     assert division(4,5)==0.8
+
 
 # Loading Animation
 def load_animation():
@@ -156,18 +167,21 @@ def randPassword():
 
      Recall(3)
 
+#BASIC CALCULATOR
+def sum(x, y):
+     return x + y 
+
+def sub(x,y):
+     return x - y 
+
+def multi(x, y):
+     return x * y 
+
+def division(x,y):
+     return x / y 
+     
 def calculator():
-     def sum(x, y):
-          return x + y 
-
-     def sub(x,y):
-          return x - y 
-
-     def multi(x, y):
-          return x * y 
-
-     def division(x,y):
-          return x / y 
+     
      print("<--------- Basic Calculator --------->\n")
      print("Select Your Operation: ")
      print("Enter 'A' or 'a' for addition.")
